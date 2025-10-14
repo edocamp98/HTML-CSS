@@ -1,0 +1,49 @@
+@charset "UTF-8";
+ @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Jacquard+12&display=swap');
+
+* {
+    font-family:'Alagard';
+   
+}
+body {
+   background-image: url('https://i.pinimg.com/1200x/4d/40/59/4d4059e14daa3a3a24acdbd9843d9114.jpg');
+   
+}
+main{
+    margin:auto;
+    width: 600px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #EBF5BB;  
+}
+p {
+    text-align: justify;
+    text-indent: 15px;
+}
+h2{
+    color: #6A5175;
+    background-color: #C4F52F
+}
+h1{  
+    text-align: center;
+    color: #6A5175;
+    font-weight: bold;
+    font-size: 4em;
+}
+.n1{
+    background-color: #8274b6;
+    color:white;
+}
+.n2{
+    background-color: #74b6a3;
+    color: white;
+}
+.n3{
+    background-color: #b69474;
+    color: white;
+}
+blockquote{
+    background-color: rgb(255, 245, 233);
+    padding: 15px;
+    color:#6A5175;
+}
