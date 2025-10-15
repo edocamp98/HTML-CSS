@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 - Tabelas</title>
+</head>
+<style>
+    *{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table{
+        border-collapse: collapse;
+    }
+
+    th, td, tr{
+        border: 2px solid black;
+        padding: 5px;
+    }
+
+    thead, tfoot{
+        background-color: grey;
+        color: white;
+        font-weight: bold;
+    }
+
+    .areas{
+        text-align: center;
+        font-weight: bold;
+        padding: 15px;
+    }
+    
+</style>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <th scope="col">Nota 1</th>          
+            <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <td rowspan="4" scope="rowgroup" class="areas">Exatas</td>
+            <td>Matemática</td>
+            <td>7</td>
+            <td>9</td>
+            <td>8</td>
+            <tr>
+                <td>Física</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>8</td>
+                <td>10</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+        <thead>
+            <th colspan="4">Média de exatas</th>
+            <td>8.25</td>
+        </thead>
+            <tbody>
+
+                <tr>
+                    <td rowspan="2" scope="rowgroup" class="areas">Humanas</td>
+                    <td>Hisória</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>5.5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="4" scope="colgroup">Média de humanas</th>
+                <td>7.25</td>
+            </tfoot>
+    </table>
+</body>
+</html>
