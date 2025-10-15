@@ -1,12 +1,21 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+:root{
+    --fonte1: "Reenie Beanie", cursive;
+    --fonte2: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
 *{
     margin: 0px;
     padding: 0px;
-    line-height: 1.5em;
+    line-height: 1.8em;
+   
 }
 
 html, body{
-    min-height: 100vh;
+    max-height: 100vh;
     background-color: greenyellow;   
     
 }
@@ -19,7 +28,9 @@ header{
 
 header > h1{
     padding-top: 50px;
-    font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 4em;
+    
 }
 
 header > p{
@@ -37,8 +48,19 @@ a:hover{
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(26, 37, 37, 0.836);
+    padding: 30px;   
+    
 }
 
 section.normal{
@@ -48,13 +70,30 @@ section.normal{
 section.imagem{
     background-color: teal;
     color: whitesmoke;
+    background-size: cover;
+    background-attachment: fixed;
     
+
+}
+.imagem#img01{
+    background-image: url("https://i.pinimg.com/1200x/a2/6d/e2/a26de2b3cb5cbaf5a22655431d4bb73e.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.imagem#img02{
+    background-image: url("https://i.pinimg.com/1200x/99/56/d9/9956d99b23d7e85a1e3f198d261072fe.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;   
+
 }
 
 footer{
     background-color: teal;    
-    padding: 5px 0 5px 20px;
+    padding-left: 20px;
     font-style: italic;
+
     
 }
 
