@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input test</title>
+</head>
+<body>
+    <h1>Teste</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset><legend>ID</legend>
+            <p><label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" required placeholder="Primeiro Nome"></p>
+            <p><label for="sobrenome">Sobrenome: </label>
+                <input type="text" name="sobrenome" id="sobrenome" required placeholder="Segundo Nome"></p>
+            <input type="submit" value="Enviar">
+        </fieldset>
+        <fieldset>
+            <legend>Quero f1?</legend>
+            <p><input type="radio" name="quer" id="quer" checked value="S">Sim :)</p>
+            <p><input type="radio" name="quer" id="quer" value="N">Não :(</p>
+        </fieldset>
+        <fieldset>
+            <legend>Quanto?</legend>
+            <input type="range" name="desejo" id="desejo" min="0" max="10">
+        </fieldset>
+    </form>
+    </body>
+</html>
