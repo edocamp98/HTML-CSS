@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        iframe{
+            display: block;
+            border: 3px solid teal;
+            border-radius: 5px;
+            width: 60vw;
+            height: 60vh;
+            margin: auto;
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+    <p>Se liga no frame</a> do pai</p>
+    <ul type="none">
+        <li><a href="https://edocamp98.github.io/Projeto-Poema/" target="frame">🐸</a></li>
+        <li><a href="../ex007/a03-3193851640.jpg" target="frame">🌍</a></li>
+        <li><a href="https://maplelegends.com/lib" target="frame">🍁</a></li>
+        
+    </ul>
+
+    <iframe srcdoc="<h1>Display de bobajadas</h1>" frameborder="0" name="frame">
+        <p>Não funcionou :/</p>
+    </iframe>
+        
+</body>
+</html>
