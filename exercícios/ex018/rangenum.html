@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: "Alagard";
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color: black;
+            color: greenyellow;
+        }
+    </style>
+    <title>Rangegegege</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Escala</legend>
+            <p>
+                <input type="range" name="num" id="nm1" min="0" max="10" value="5" oninput="ival.innerHTML = Number(nm1.value)">
+                <output id="ival" value="5"></output>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
