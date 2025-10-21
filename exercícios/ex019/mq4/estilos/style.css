@@ -15,6 +15,10 @@ header{
 
 }
 
+menu{
+    display: none;
+}
+
 header h1{
     padding: 10px;
     text-align: center;
@@ -61,4 +65,17 @@ article p{
     text-align: justify;
     text-indent: 10px;
     line-height: 1.3em;
+}
+
+#burguer{
+    display: block;
+    text-align: center;
+    background-color: rgb(55, 55, 55);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+#burguer:hover{
+    background-color: whitesmoke;
+    color: black;
 }

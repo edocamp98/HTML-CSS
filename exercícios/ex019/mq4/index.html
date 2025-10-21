@@ -11,10 +11,10 @@
 <body>
     <header>
         <h1>Ritmo de fim de Curso</h1>
-        <span class="material-symbols-outlined">
+        <span id ="burguer" class="material-symbols-outlined" onclick="clickMenu()">
     menu
     </span>
-        <menu>
+        <menu id="items">
             <ul>
                 <li><a href="#">Mocorongo</a></li>
                 <li><a href="#">Bocó</a></li>
@@ -31,5 +31,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam qui obcaecati atque nostrum tempora repudiandae sit possimus porro laborum velit sequi vitae exercitationem reprehenderit sint, alias id ab soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam qui obcaecati atque nostrum tempora repudiandae sit possimus porro laborum velit sequi vitae exercitationem reprehenderit sint, alias id ab soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam qui obcaecati atque nostrum tempora repudiandae sit possimus porro laborum velit sequi vitae exercitationem reprehenderit sint, alias id ab soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium numquam qui obcaecati atque nostrum tempora repudiandae sit possimus laborum velit sequi vitae exercitationem reprehenderit sint, alias id ab soluta?</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+           if (items.style.display == 'block'){
+                items.style.display = "none"
+           } else {
+            items.style.display = 'block'
+           }
+        }
+    </script>
 </body>
 </html>
